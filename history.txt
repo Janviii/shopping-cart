@@ -1,0 +1,77 @@
+    1  cd Desktop/ex9-shoppingcart/
+    2  git init
+    3  git status
+    4  git add .
+    5  git commit -m "initial commit"
+    6  git status
+    7  git remote add origin https://github.com/Janviii/shopping-cart.git
+    8  git branch -M main
+    9  git push -u origin main
+   10  git branch colour-change
+   11  git checkout colour-change 
+   12  code .
+   13  git status
+   14  git add .
+   15  git status
+   16  git commit -m "change some colours in .css file"
+   17  git status
+   18  git checkout main
+   19  git branch features
+   20  git checkout features 
+   21  code .
+   22  git checkout main
+   23  git checkout features 
+   24  git add .
+   25  git commit -m "add some features"
+   26  git status
+   27  git checkout main
+   28  git branch --no-merged
+   29  git merge colour-change 
+   30  git merge features 
+   31  explorer.exe .
+   32  git push
+   33  git branch -d colour-change 
+   34  git branch --merged
+   35  git branch -d features
+   36  git branch --merged
+   37  node
+   38  git branch gulp-setup
+   39  git checkout gulp-setup 
+   40  npm install --global gulp-cli
+   41  npm init
+   42  npm install --save-dev gulp
+   43  touch gulp.js
+   44  gulp build
+   45  gulp build
+   46  npm install --save-dev gulp-concat
+   47  npm install --save-dev gulp-uglify
+   48  npm install gulp-rename
+   49  npm install gulp-clean-css --save-dev
+   50  gulp build
+   51  npm i gulp
+   52  gulp build
+   53  npm babel
+   54  npm install @babel/core
+   55  gulp build
+   56  npm install --save-dev @babel/register @babel/core @babel/preset-env
+   57  gulp build
+   58* gu
+   59  npm install -g gulp@3.9.0
+   60  gulp build
+   61  gulp build
+   62  npm install @babel/present-env --save-dev
+   63  npm install --save-dev gulp-babel @babel/core
+   64  gulp build
+   65  npm install @babel/preset-env --save-dev
+   66  gulp build
+   67  npm install
+   68  gulp build
+   69  gulp
+   70  gulp build
+   71  gulp build
+   72  git add .
+   73  git commit -m "gulp setup"
+   74  git checkout main
+   75  git merge gulp-setup 
+   76  git push
+   77  history > history.txt
