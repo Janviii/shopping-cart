@@ -9,6 +9,7 @@ class Cart {
     this.courses.push(course);
     this.length = this.courses.length;
     this.redrawCart();
+    this.updateBill();
   }
 
   removeCourse(courseId) {
@@ -16,6 +17,7 @@ class Cart {
     this.courses.splice(index,1);
     this.length = this.courses.length;
     this.redrawCart();
+    this.updateBill();
   }
 
   subtotal() {
@@ -26,6 +28,11 @@ class Cart {
 
   total() {
     return parseFloat((this.subtotal() * 1.13).toFixed(2));
+  }
+
+  updateBill() {
+    const billTotal = document.getElementById('yourBill');
+    billTotal.innerText = this.total();
   }
 
   redrawCart() {
